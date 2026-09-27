@@ -4,8 +4,10 @@
 
 This dashboard visualizes and validates Verifiable Random Function (VRF) facilitated leader election and dynamic trust scoring in peer-to-peer Decentralized Machine Learning environments. It provides experimental proof that this architecture significantly reduces the probability of malicious nodes being selected for the validator committee compared to standard random baselines.
 
-Here's the WASM Rust Engine that runs its logic-
-https://www.npmjs.com/package/vrf-bft-simulator
+You can find the WASM Rust Engine that runs its logic here-\
+NPM- https://www.npmjs.com/package/vrf-bft-simulator
+
+GitHub- https://github.com/ayushsaksena30/vrf-validator-selection-simulator-rust
 
 ## Overview
 This dashboard consumes data from a custom WASM Rust engine running entirely client-side. It features:
