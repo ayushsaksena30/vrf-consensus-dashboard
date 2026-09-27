@@ -2,6 +2,8 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+@source "../node_modules/@tremor/react/dist";
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -23,6 +25,28 @@
   --color-chart-3: var(--chart-3);
   --color-chart-2: var(--chart-2);
   --color-chart-1: var(--chart-1);
+  --color-tremor-background: var(--card);
+  --color-tremor-background-emphasis: var(--muted);
+  --color-tremor-background-subtle: var(--muted);
+  --color-tremor-border: var(--border);
+  --color-tremor-brand: var(--status-safe);
+  --color-tremor-content: var(--foreground);
+  --color-tremor-content-strong: var(--foreground);
+  --color-tremor-content-emphasis: var(--foreground);
+  --color-tremor-content-subtle: var(--muted-foreground);
+  --color-tremor-label: var(--muted-foreground);
+  --color-dark-tremor-background: var(--popover);
+  --color-dark-tremor-background-emphasis: var(--accent);
+  --color-dark-tremor-background-subtle: var(--muted);
+  --color-dark-tremor-border: var(--border);
+  --color-dark-tremor-brand: var(--status-safe);
+  --color-dark-tremor-content: var(--popover-foreground);
+  --color-dark-tremor-content-strong: var(--popover-foreground);
+  --color-dark-tremor-content-emphasis: var(--popover-foreground);
+  --color-dark-tremor-content-subtle: var(--muted-foreground);
+  --color-dark-tremor-label: var(--muted-foreground);
+  --color-status-safe: var(--status-safe);
+  --color-status-alert: var(--status-alert);
   --color-ring: var(--ring);
   --color-input: var(--input);
   --color-border: var(--border);
@@ -49,6 +73,7 @@
 }
 
 :root {
+  color-scheme: light;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -73,6 +98,8 @@
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
   --radius: 0.625rem;
+  --status-safe: #0f766e;
+  --status-alert: #b91c1c;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
@@ -84,6 +111,7 @@
 }
 
 .dark {
+  color-scheme: dark;
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
@@ -107,6 +135,8 @@
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
+  --status-safe: #5eead4;
+  --status-alert: #fca5a5;
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
   --sidebar-primary: oklch(0.488 0.243 264.376);
@@ -128,3 +158,33 @@
     @apply font-sans;
   }
 }
+
+.trust-distribution-chart svg text {
+  fill: var(--muted-foreground) !important;
+  font-size: 12px;
+}
+
+.trust-distribution-chart .recharts-cartesian-grid line {
+  stroke: var(--border) !important;
+}
+
+.trust-distribution-chart .recharts-bar-rectangle,
+.trust-distribution-chart .recharts-bar-rectangle path,
+.trust-distribution-chart .recharts-bar-rectangle rect {
+  fill: var(--status-safe) !important;
+}
+
+.trust-distribution-chart .recharts-tooltip-wrapper > div {
+  background: var(--popover) !important;
+  border-color: var(--border) !important;
+  color: var(--popover-foreground) !important;
+}
+
+.trust-distribution-chart .recharts-tooltip-wrapper > div * {
+  color: var(--popover-foreground) !important;
+}
+
+.trust-distribution-chart {
+  color: var(--foreground);
+}
+
