@@ -7,7 +7,7 @@ This dashboard visualizes and validates Verifiable Random Function (VRF) facilit
 You can find the WASM Rust Engine that runs its logic here-\
 NPM- https://www.npmjs.com/package/vrf-bft-simulator
 
-GitHub- https://github.com/ayushsaksena30/vrf-validator-selection-simulator-rust
+GitHub- https://github.com/ayushsaksena30/vrf-bft-simulator-rust
 
 ## Overview
 This dashboard consumes data from a custom WASM Rust engine running entirely client-side. It features:

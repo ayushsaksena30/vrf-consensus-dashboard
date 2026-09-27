@@ -236,7 +236,7 @@ export default function Dashboard() {
           </div>
           <div className="flex shrink-0 justify-end gap-3">
             <Button asChild variant="outline">
-              <a href="https://github.com/ayushsaksena30/vrf-validator-selection-simulator-rust" rel="noreferrer" target="_blank">
+              <a href="https://github.com/ayushsaksena30/vrf-bft-simulator-rust" rel="noreferrer" target="_blank">
                 Simulator engine repository
                 <ExternalLink aria-hidden="true" className="size-4" />
               </a>
