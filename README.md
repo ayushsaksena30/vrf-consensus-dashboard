@@ -41,3 +41,5 @@ pnpm dev
 # or
 bun dev
 ```
+
+### Made by [Ayush Saksena](https://ayush-saksena.vercel.app)
