@@ -164,7 +164,6 @@ export default function Dashboard() {
     runSimulation();
     setIsSimulationReset(true);
     setIsWasmReady(true);
-    runSimulation();
   });
 
   useEffect(() => {
