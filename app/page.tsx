@@ -161,6 +161,8 @@ export default function Dashboard() {
   };
 
   const onWasmReady = useEffectEvent(() => {
+    runSimulation();
+    setIsSimulationReset(true);
     setIsWasmReady(true);
     runSimulation();
   });
